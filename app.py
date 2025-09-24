@@ -4,7 +4,8 @@ from owlready2 import get_ontology
 app = Flask(__name__)
 
 # Load ontology at startup
-ONTO_PATH = "/path/to/your/ontology.owl"
+#ONTO_PATH = "/path/to/your/ontology.owl"
+ONTO_PATH = "https://www.ai4c2ps.eu/ontologies/2024/1.0.0/AI4C2PS.owl"
 ontology = get_ontology(ONTO_PATH).load()
 
 @app.route('/classes', methods=['GET'])
